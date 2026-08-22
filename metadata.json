@@ -1,0 +1,6 @@
+{
+  "name": "Focus & Mood Generator",
+  "description": "An ambient focus sanctuary with procedural visualizers, Web Audio procedural sound generators, floating pomodoro timer, intention watermark, and micro-journal mood tracker.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

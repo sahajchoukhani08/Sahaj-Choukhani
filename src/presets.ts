@@ -1,0 +1,123 @@
+import { ColorPalette, SoundPreset } from './types';
+
+export const COLOR_PALETTES: ColorPalette[] = [
+  {
+    id: 'deep-space',
+    name: 'Midnight Deep',
+    colors: ['#0f172a', '#1e1b4b', '#38bdf8', '#818cf8', '#0284c7'],
+    bgGradient: 'radial-gradient(ellipse at bottom, #1e1b4b 0%, #030712 100%)',
+  },
+  {
+    id: 'sunset-ember',
+    name: 'Warm Sunset',
+    colors: ['#450a0a', '#7f1d1d', '#f97316', '#fbbf24', '#f43f5e'],
+    bgGradient: 'radial-gradient(ellipse at bottom, #451a03 0%, #050505 100%)',
+  },
+  {
+    id: 'forest-zen',
+    name: 'Forest Zen',
+    colors: ['#022c22', '#064e3b', '#10b981', '#34d399', '#a7f3d0'],
+    bgGradient: 'radial-gradient(ellipse at bottom, #022c22 0%, #020617 100%)',
+  },
+  {
+    id: 'aurora-violet',
+    name: 'Aurora Borealis',
+    colors: ['#2e1065', '#065f46', '#2dd4bf', '#a855f7', '#38bdf8'],
+    bgGradient: 'radial-gradient(ellipse at bottom, #172554 0%, #09090b 100%)',
+  },
+  {
+    id: 'cyber-neon',
+    name: 'Cyber Twilight',
+    colors: ['#1e1b4b', '#4c0519', '#e11d48', '#a855f7', '#06b6d4'],
+    bgGradient: 'radial-gradient(ellipse at bottom, #2e1065 0%, #020617 100%)',
+  },
+  {
+    id: 'monochrome-calm',
+    name: 'Minimal Slate',
+    colors: ['#0f172a', '#1e293b', '#64748b', '#94a3b8', '#e2e8f0'],
+    bgGradient: 'radial-gradient(ellipse at bottom, #0f172a 0%, #020617 100%)',
+  },
+];
+
+export const SOUND_PRESETS: SoundPreset[] = [
+  {
+    id: 'deep-flow',
+    name: 'Deep Flow',
+    icon: 'Brain',
+    description: 'Brown noise + Alpha beats for coding & problem solving',
+    paletteId: 'deep-space',
+    visualMode: 'particles',
+    tracks: {
+      whiteNoise: 0,
+      brownNoise: 0.6,
+      binaural: { type: 'alpha', volume: 0.35 },
+      rain: 0.3,
+      fire: 0,
+      birds: 0,
+    },
+  },
+  {
+    id: 'rainy-cabin',
+    name: 'Rainy Cabin',
+    icon: 'CloudRain',
+    description: 'Gentle raindrops & crackling hearth for cozy writing',
+    paletteId: 'sunset-ember',
+    visualMode: 'gradient',
+    tracks: {
+      whiteNoise: 0.1,
+      brownNoise: 0.3,
+      binaural: { type: 'none', volume: 0 },
+      rain: 0.7,
+      fire: 0.45,
+      birds: 0,
+    },
+  },
+  {
+    id: 'zen-sanctuary',
+    name: 'Zen Sanctuary',
+    icon: 'Trees',
+    description: 'Forest birds & Theta waves for calm contemplation',
+    paletteId: 'forest-zen',
+    visualMode: 'aurora',
+    tracks: {
+      whiteNoise: 0,
+      brownNoise: 0.25,
+      binaural: { type: 'theta', volume: 0.4 },
+      rain: 0,
+      fire: 0,
+      birds: 0.65,
+    },
+  },
+  {
+    id: 'theta-meditation',
+    name: 'Theta State',
+    icon: 'Sparkles',
+    description: 'Deep 6Hz Theta binaural beat for breathing & reset',
+    paletteId: 'aurora-violet',
+    visualMode: 'aurora',
+    tracks: {
+      whiteNoise: 0,
+      brownNoise: 0.45,
+      binaural: { type: 'theta', volume: 0.55 },
+      rain: 0.2,
+      fire: 0,
+      birds: 0,
+    },
+  },
+  {
+    id: 'pure-white-focus',
+    name: 'Noise Blanket',
+    icon: 'Zap',
+    description: 'Pure acoustic masking for busy or noisy environments',
+    paletteId: 'monochrome-calm',
+    visualMode: 'particles',
+    tracks: {
+      whiteNoise: 0.45,
+      brownNoise: 0.55,
+      binaural: { type: 'none', volume: 0 },
+      rain: 0,
+      fire: 0,
+      birds: 0,
+    },
+  },
+];
